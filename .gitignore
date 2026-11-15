@@ -1,3 +1,4 @@
+
 # Python
 .venv/
 venv/
@@ -8,19 +9,34 @@ __pycache__/
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+secrets/
+credentials/
+.aws/
 
 # Terraform
 **/.terraform/*
 *.tfstate
 *.tfstate.*
 *.tfplan
+*.tfvars
+*.tfvars.json
 crash.log
+crash.*.log
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
 
+
 # Editor and operating system
 .vscode/
 .DS_Store
 Thumbs.db
+# Generated deployment packages
+*.zip
+# Generated test responses and raw API data
+/response.json
+/terraform/response.json
+/data/raw/
